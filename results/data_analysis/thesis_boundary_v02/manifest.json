@@ -1,0 +1,22 @@
+{
+  "cases": [
+    "cf_basic_K2_delay6",
+    "cf_basic_K4_delay6",
+    "cf_basic_K8_delay6",
+    "cf_history_K4_delay6",
+    "cf_episode_K4_delay6",
+    "cf_basic_K4_delay6.5",
+    "skin_baseline_K2_bcc_first_cap730.5",
+    "skin_baseline_K4_bcc_first_cap730.5",
+    "skin_baseline_K8_bcc_first_cap730.5",
+    "skin_baseline_K4_scc_first_cap730.5",
+    "skin_baseline_K4_bcc_first_cap1461",
+    "skin_measured_K2_bcc_first_cap730.5",
+    "skin_measured_K4_bcc_first_cap730.5",
+    "skin_measured_K8_bcc_first_cap730.5",
+    "skin_measured_K4_scc_first_cap730.5",
+    "skin_measured_K4_bcc_first_cap1461"
+  ],
+  "initial_successes": 16,
+  "coupled_successes": 16
+}

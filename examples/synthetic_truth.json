@@ -1,0 +1,32 @@
+{
+  "clinic_variances": [
+    0.04,
+    0.0225
+  ],
+  "residual_covariance": [
+    [
+      0.1,
+      0.025
+    ],
+    [
+      0.025,
+      0.14
+    ]
+  ],
+  "coefficients": {
+    "x": [
+      0.25,
+      -0.2
+    ]
+  },
+  "age_limits": [
+    3.0,
+    3.0
+  ],
+  "seed": 17,
+  "n_subjects": 36,
+  "n_clusters": 12,
+  "hierarchy": "nested",
+  "baseline": "curved",
+  "alternating": false
+}

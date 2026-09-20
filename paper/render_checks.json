@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "counts": {
+    "math": 1917,
+    "mathErrors": 0,
+    "tables": 28,
+    "placeholders": false
+  },
+  "pages": [
+    {
+      "route": "/index.html",
+      "width": 390,
+      "documentWidth": 390
+    },
+    {
+      "route": "/docs/data.html",
+      "width": 390,
+      "documentWidth": 390
+    },
+    {
+      "route": "/docs/api.html",
+      "width": 390,
+      "documentWidth": 390
+    },
+    {
+      "route": "/docs/examples.html",
+      "width": 390,
+      "documentWidth": 390
+    },
+    {
+      "route": "/paper/manuscript.html",
+      "width": 390,
+      "documentWidth": 390
+    }
+  ],
+  "errors": []
+}

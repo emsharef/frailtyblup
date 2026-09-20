@@ -1,0 +1,38 @@
+# Reproducibility and the paper
+
+## What this repository reproduces directly
+
+Installation, all synthetic examples, the validated public interval interface, the constrained estimator, numerical regression tests, and documentation builds require no private files. `tests/reference.json` contains expected scores, derivatives and predictions evaluated by the original manuscript implementation on synthetic inputs. `docs/kernel_provenance.json` records the source identities. The default packaged coupled search uses the same equations, scaling and candidate-selection rule.
+
+The [paper](../paper/manuscript.md) includes all proofs, simulation tables and application results. Supporting simulation/coverage summaries, simulated per-history interval diagnostics, aggregate clinical coefficient/Jacobian summaries, and figures are in `results/`. The [artifact manifest](paper_provenance.json) identifies original and public-copy hashes. The public manuscript changes links and explains this repository's reproduction scope; mathematical displays and source table rows were compared with manuscript 0.12 and preserved.
+
+## Historical study versus standalone examples
+
+The paper's broad study has 4,200 attempted scenario fits on 3,800 distinct histories. It uses application-informed covariate and follow-up profiles. Reconstructing those original event histories requires the underlying clinical design inputs. Those individual records are not distributed here. The new examples use an entirely synthetic generator; they should not be described as reproductions of the 4,200-fit study or evidence for new statistical claims.
+
+The archived scenario manifest preserves cases, rates, seeds and run settings. Source/dataset hash entries referring to the private research layout were removed from the public manifest; its original hash is retained in `paper_provenance.json`. The application manifest retains specification names and fit counts. Original observation data, correspondence, private methods drafts, referee exchanges, and development archives are not included. Literature PDFs are cited rather than redistributed.
+
+## Diagnostic panels
+
+- `results/manuscript_v09/`: candidate/active-constraint audits and interior-only coverage. Interpret coverage conditional on eligible successful interior fits, with the denominators shown in the paper.
+- `results/manuscript_v010/`: normal-reference boundary/interior coverage records and summaries, plus aggregate clinical derivative/SE diagnostics. Ambient, fixed-face and rank-tangent calculations remain diagnostics, not a boundary inference theorem.
+- `results/manuscript_v011/`: Student-reference comparison using the same fitted estimates and SEs. It changes the multiplier only and retains the normal results for comparison.
+
+Run `python tools/recompute_multiplier.py` to regenerate the multiplier comparison directly from the included simulated interval records. No new histories or fits are needed. Monte Carlo counts, failed-fit denominators, and the distinctions between pooled/interior/boundary strata must be retained in any further analysis.
+
+## Building and checking
+
+```bash
+python -m unittest discover -s tests -v
+python examples/quickstart.py
+python examples/time_dependent.py
+python examples/alternating.py
+python examples/from_csv.py
+python tools/recompute_multiplier.py
+python -m pip install '.[docs]'
+python tools/build_docs.py
+```
+
+`tools/build_docs.py` generates portable HTML and copies supplements into `site/`. It uses MathJax 3.2.2 from a CDN by default; `--mathjax-url` selects a locally hosted installation. No website deployment occurs. The PDF is included as a reviewed artifact. To regenerate it, serve the generated site, install the optional Node rendering dependencies with `npm install`, install Chromium with `npx playwright install chromium`, and run `node tools/render_pdf.cjs http://127.0.0.1:8000 paper/paper.pdf`. The renderer checks formula errors and table counts and writes a render report. Install the PDF extra with `python -m pip install '.[pdf]'`, then run `python tools/finalize_pdf.py paper/paper.pdf --base-url http://127.0.0.1:8000` to make PDF links independent of the preview server. Rebuild the site once more to copy the new PDF.
+
+The recorded test environment is in `docs/validation_environment.json`; dependency lower bounds are compatibility targets, not claims that every version has been exercised locally. CI covers additional Python versions when run by the repository host.

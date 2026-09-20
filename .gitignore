@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+site/
+node_modules/
+examples/output/
+.DS_Store
+.coverage
+*.log

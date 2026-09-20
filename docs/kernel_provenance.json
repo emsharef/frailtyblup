@@ -1,0 +1,32 @@
+[
+  {
+    "source": "thesis_application_core.py",
+    "source_sha256": "72d0ec6f2c9cf22f8ad12229cc510854bc670ea60418d1630961fb8b921cd1e1",
+    "package_module": "design.py"
+  },
+  {
+    "source": "thesis_boundary_core.py",
+    "source_sha256": "c4d1eee9649385553a2270ba0e8ca7823a0bf4ec08be39f0daf2aa8281f027c8",
+    "package_module": "scores.py"
+  },
+  {
+    "source": "thesis_boundary_solver.py",
+    "source_sha256": "12d6e0a36769f8ad180906bf6c87773ce54d6d0e6052c32b9acb72c0dacecd7a",
+    "package_module": "constraints.py"
+  },
+  {
+    "source": "thesis_boundary_fast.py",
+    "source_sha256": "7060960a5324a456fbfea75a096e3509cd090bffef3baa9d9155d4036f797a2d",
+    "package_module": "derivatives.py"
+  },
+  {
+    "source": "thesis_boundary_scaled_refined.py",
+    "source_sha256": "dc57c2f755ec2b7e61e51c0036409d2ea2b25b969e06ddd07a24b423a7f6abde",
+    "package_module": "solver.py"
+  },
+  {
+    "source": "thesis_application_initial.py",
+    "source_sha256": "b94a39c5976e3e6676cfa87e6d91118276816d427e9be0d8fbf116474b6bc547",
+    "package_module": "initial.py"
+  }
+]

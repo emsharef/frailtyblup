@@ -1,0 +1,962 @@
+{
+  "cases": [
+    {
+      "name": "cf_reference",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 200
+    },
+    {
+      "name": "cf_n160",
+      "family": "cf",
+      "n": 160,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_n2564",
+      "family": "cf",
+      "n": 2564,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_long4",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 4,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_long16",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 16,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_K2",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 2,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_K8",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 8,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_flat",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "flat",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_monotone",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "monotone",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_zero_ending",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.0
+      ],
+      "theta": 0.0,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_near_rank",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        1.8680300111,
+        0.014191105775
+      ],
+      "theta": -0.14653539946886407,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_rank_one",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        1.8680300111,
+        0.014191105775
+      ],
+      "theta": -0.16281711052096007,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 200
+    },
+    {
+      "name": "cf_law_alt",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "alternative",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_censor_uniform",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "uniform",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_dynamic",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "continuous",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "cf_early",
+      "family": "cf",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.4,
+        0.06
+      ],
+      "theta": -0.03,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": true,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_reference",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 200
+    },
+    {
+      "name": "skin_patients_quarter",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 0.25,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_patients_fourfold",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 4,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_clinics28",
+      "family": "skin",
+      "n": 641,
+      "clinics": 28,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_long4",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 4,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_K2",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 2,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_K8",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 8,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_zero_clinics",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.0,
+        0.0
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 200
+    },
+    {
+      "name": "skin_moderate_clinics",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.04,
+        0.0225
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_flat",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "flat",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_law_alt",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "alternative",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_law_mixture",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "mixture",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_dynamic",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "continuous",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_rich_design",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "none",
+      "early": false,
+      "rich": true,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_censor_uniform",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "uniform",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "skin_censor_adaptive",
+      "family": "skin",
+      "n": 641,
+      "clinics": 7,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.002,
+        0.003
+      ],
+      "nu": [
+        0.95,
+        1.85
+      ],
+      "theta": 0.3,
+      "law": "default",
+      "censor": "adaptive",
+      "dynamic": "none",
+      "early": false,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 100
+    },
+    {
+      "name": "informative_reference",
+      "family": "informative",
+      "n": 641,
+      "clinics": 75,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.04,
+        0.0225
+      ],
+      "nu": [
+        0.1,
+        0.14
+      ],
+      "theta": 0.025,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "binary",
+      "early": true,
+      "rich": false,
+      "T": 20.0,
+      "replicates": 200
+    },
+    {
+      "name": "growth_m32",
+      "family": "informative",
+      "n": 641,
+      "clinics": 32,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 4,
+      "hazard": "curved",
+      "sigma": [
+        0.04,
+        0.0225
+      ],
+      "nu": [
+        0.1,
+        0.14
+      ],
+      "theta": 0.025,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "binary",
+      "early": true,
+      "rich": false,
+      "T": 32.0,
+      "replicates": 100
+    },
+    {
+      "name": "growth_m64",
+      "family": "informative",
+      "n": 641,
+      "clinics": 64,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 7,
+      "hazard": "curved",
+      "sigma": [
+        0.04,
+        0.0225
+      ],
+      "nu": [
+        0.1,
+        0.14
+      ],
+      "theta": 0.025,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "binary",
+      "early": true,
+      "rich": false,
+      "T": 128.0,
+      "replicates": 100
+    },
+    {
+      "name": "growth_m128",
+      "family": "informative",
+      "n": 641,
+      "clinics": 128,
+      "patient_scale": 1.0,
+      "followup_scale": 1.0,
+      "K": 13,
+      "hazard": "curved",
+      "sigma": [
+        0.04,
+        0.0225
+      ],
+      "nu": [
+        0.1,
+        0.14
+      ],
+      "theta": 0.025,
+      "law": "default",
+      "censor": "common",
+      "dynamic": "binary",
+      "early": true,
+      "rich": false,
+      "T": 512.0,
+      "replicates": 200
+    }
+  ],
+  "rates": {
+    "informative": [
+      0.8,
+      1.1
+    ],
+    "cf": [
+      0.0964541283229989,
+      2.0
+    ],
+    "skin": [
+      0.241669942804741,
+      0.09750141399907354
+    ],
+    "skin_rich": [
+      0.21326696936063713,
+      0.02123603246349982
+    ]
+  },
+  "replicate_override": null,
+  "start_replicate": 0,
+  "workers": 4,
+  "seed_namespace": 20260920
+}

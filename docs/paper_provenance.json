@@ -1,0 +1,109 @@
+[
+  {
+    "artifact": "results/manuscript_v09/candidate_summary.csv",
+    "original_sha256": "32d2e8414c2d1d1a5a5db8ce6bede8c76ee5bd1ff920eec2bb15319b82092bf4",
+    "sha256": "c53b27190ae2f2e5c2de8a10c76591532c0144f58495ad3262e48ce53369e3f0"
+  },
+  {
+    "artifact": "results/manuscript_v09/active_hazard_errors.csv",
+    "original_sha256": "706812d6ff8351fde1d2e5d8ad2b16c92188dc34d726ca9c707c7915e0aa65ba",
+    "sha256": "5cf36f2b45a556969f002a26395c63c87bd8f9769e02d85042c5c12551fbce5b"
+  },
+  {
+    "artifact": "results/simulations/thesis_boundary_v02/skin_information.png",
+    "original_sha256": "86210c7467b60d149da0af3b77804281b9df8430d65aaef15ea2b8694915d431",
+    "sha256": "86210c7467b60d149da0af3b77804281b9df8430d65aaef15ea2b8694915d431"
+  },
+  {
+    "artifact": "results/simulations/thesis_boundary_v02/growth.png",
+    "original_sha256": "6537b01c434d3393b190c39e5db855d33ad9c7e737b14831239d86443af98ea3",
+    "sha256": "6537b01c434d3393b190c39e5db855d33ad9c7e737b14831239d86443af98ea3"
+  },
+  {
+    "artifact": "results/manuscript_v09/coverage_summary.csv",
+    "original_sha256": "cde58d42db680b36e9e2479f4ea84965ddcb4477a78d0b240ca5639d96460076",
+    "sha256": "599cf1a8e75a0febc2aac08bf6872ef9a7abbf93827dc8041c15467b14f55855"
+  },
+  {
+    "artifact": "results/manuscript_v09/coverage_records.jsonl.gz",
+    "original_sha256": "444b8e7dca6d96c06b7945f8e361fd35efb7611462eb8c6779499b1cb1523657",
+    "sha256": "444b8e7dca6d96c06b7945f8e361fd35efb7611462eb8c6779499b1cb1523657"
+  },
+  {
+    "artifact": "results/manuscript_v010/coverage_summary.csv",
+    "original_sha256": "5e434aca76c6343fc0ee20e5408d8ecb85b810dd37e41efbb17d8323a9b3c37e",
+    "sha256": "5e434aca76c6343fc0ee20e5408d8ecb85b810dd37e41efbb17d8323a9b3c37e"
+  },
+  {
+    "artifact": "results/manuscript_v011/reference_coverage.csv",
+    "original_sha256": "af9366dd1c9a3627ee89ca8f79516c1b783adf8797ea573735c153adf604e05f",
+    "sha256": "af9366dd1c9a3627ee89ca8f79516c1b783adf8797ea573735c153adf604e05f"
+  },
+  {
+    "artifact": "results/simulations/thesis_boundary_v01/manifest.json",
+    "original_sha256": "c90b0c575f57094247b0dae43515163d431501c928be81ce55da572376167952",
+    "sha256": "ba1ab1191f178f437471524e2799415c45c9fe4a9cc9060437274443bd239ad7"
+  },
+  {
+    "artifact": "results/simulations/thesis_boundary_v02/estimates.csv",
+    "original_sha256": "f807d780995ab299d559783d82e8183b10060be51350a4477acb98d1b2735379",
+    "sha256": "b98f7ce32e51ec4c34d728b403ed4065b5612edd7845846670a0eca1891ad1d4"
+  },
+  {
+    "artifact": "results/simulations/thesis_boundary_v02/paired_risks.csv",
+    "original_sha256": "16098d1cc647d5203d1854e31b1250c36f50f44065ca387b71637fda7345ae71",
+    "sha256": "b3e0377b04f67e92676299319d2268c9f533111c6f82630bd915b39db3c649d2"
+  },
+  {
+    "artifact": "results/simulations/thesis_boundary_v02/paired_bins.csv",
+    "original_sha256": "85aa5369c28cc72b5eab67a2ac4d94b851796852c9441394a30cbd4ba8e2d4fc",
+    "sha256": "67e9f6cac6ee70dc77801e573d5b70acd4bd52f2ff1d13b7152625af2ddb0e74"
+  },
+  {
+    "artifact": "results/data_analysis/thesis_boundary_v02/fitted_baselines.png",
+    "original_sha256": "fba9ea912fee2c6984b384c5270c7d490381facdc15844df62ea080324b6eeee",
+    "sha256": "fba9ea912fee2c6984b384c5270c7d490381facdc15844df62ea080324b6eeee"
+  },
+  {
+    "artifact": "results/data_analysis/thesis_boundary_v02/estimates.csv",
+    "original_sha256": "bb9186bbc9fed4b2399da8a8f535a1c0f7ba70393fd462e1797a5c7a55385670",
+    "sha256": "b6e60e5c4e6c33a7edad91dc2a66ee3260b5d6dce15b75953694aa229555131f"
+  },
+  {
+    "artifact": "results/data_analysis/thesis_boundary_v02/manifest.json",
+    "original_sha256": "97ee78c0ba7dc3c68fa1ab1fd186ca1530bbda0b855484adbb092e3a91c33561",
+    "sha256": "6349885e918ba0ff494f1eeab428acf2b836a10b0883cf75e279b65319dac043"
+  },
+  {
+    "artifact": "results/manuscript_v010/clinical_regression.csv",
+    "original_sha256": "6be982ca090c04510733ae45688f58694a66850540d1c3074b33c5a15642e301",
+    "sha256": "6be982ca090c04510733ae45688f58694a66850540d1c3074b33c5a15642e301"
+  },
+  {
+    "artifact": "results/manuscript_v010/clinical_jacobians.csv",
+    "original_sha256": "f9dfab6c65cc9cc5fc12ef39b336e160e4e9f77b9dbbfca1222d0bb0da901837",
+    "sha256": "f9dfab6c65cc9cc5fc12ef39b336e160e4e9f77b9dbbfca1222d0bb0da901837"
+  },
+  {
+    "artifact": "results/manuscript_v010/clinical_records.json",
+    "original_sha256": "019340bc10de9e8fe3d1bcad716897bbdd96cf2f68968b637b039e3d0d81d347",
+    "sha256": "019340bc10de9e8fe3d1bcad716897bbdd96cf2f68968b637b039e3d0d81d347"
+  },
+  {
+    "artifact": "results/manuscript_v010/coverage_records.jsonl.gz",
+    "original_sha256": "9d2235499ecaf8a0eb343e1643e032c02ac5d8ce3f5fc48f7787421e6397e0f4",
+    "sha256": "9d2235499ecaf8a0eb343e1643e032c02ac5d8ce3f5fc48f7787421e6397e0f4"
+  },
+  {
+    "artifact": "paper/manuscript.md",
+    "original_sha256": "7ae989eff6a23174f58d9f81ca7a24622043539de3d362502a059aabac0f0ccf",
+    "sha256": "77475f557ff116027b92e69d542da0533633b3d1d91566d3d755602ba85037cc",
+    "changes": "Portable supplement/reference links and accurate public reproducibility wording; all mathematical displays and table rows unchanged."
+  },
+  {
+    "artifact": "paper/paper.pdf",
+    "sha256": "96d263c2ef1b8136dcafd2382b126f754582d4da0ad3fd188c653b699c5b24cf",
+    "original_sha256": "0aef7fdb1c4f2495e1fb1495217dcb08c6b0e6ff27cc631859dd675125f12103",
+    "changes": "Rebuilt from the portable manuscript; all 28 tables and 1917 formulas rendered; preview-host PDF annotations converted to relative links."
+  }
+]

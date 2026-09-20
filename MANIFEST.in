@@ -1,0 +1,9 @@
+include README.md LICENSE CITATION.cff CHANGELOG.md CONTRIBUTING.md
+recursive-include tests *.py *.json
+recursive-include examples *.py *.csv *.json
+prune examples/output
+recursive-include docs *.md *.json *.css
+recursive-include paper *.md *.pdf
+recursive-include results *.csv *.json *.gz *.png
+recursive-include tools *.py *.cjs
+include package.json

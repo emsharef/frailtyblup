@@ -1,0 +1,27 @@
+
+:root{color-scheme:light;--ink:#23323a;--muted:#586771;--link:#075f71}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#f5f3ed;font:18px/1.7 Georgia,serif}
+nav{font:14px/1.5 system-ui,sans-serif;background:#163c46;color:#fff;padding:15px max(20px,calc((100% - 1000px)/2));display:flex;flex-wrap:wrap;gap:10px 22px}
+nav a{color:#fff}a{color:var(--link);text-underline-offset:3px}main{max-width:1000px;margin:35px auto;padding:42px 55px;background:#fff;border:1px solid #e0e3df;border-radius:9px}
+h1,h2,h3{font-family:system-ui,sans-serif;line-height:1.25;letter-spacing:-.02em}h1{font-size:2.1rem;margin:0 0 1.4rem}h2{font-size:1.5rem;margin:2.8rem 0 1rem;border-top:1px solid #dce3e3;padding-top:1.6rem}h3{font-size:1.15rem;margin:2rem 0 1rem}
+p{margin:1em 0}li{margin:.45em 0}table{border-collapse:collapse;width:100%;font-size:.9em}th,td{border:1px solid #d5dfdf;padding:10px;text-align:left;vertical-align:top}th{background:#edf3f3}.table-wrap{overflow-x:auto}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:18px;background:#f1f5f5;font:13px/1.6 ui-monospace,monospace}code{font-size:.87em}blockquote{border-left:4px solid #5595a0;margin:1.5rem 0;padding:2px 22px;background:#f3f8f8}
+img{max-width:100%;height:auto}main{overflow-wrap:anywhere}.math-display{overflow-x:auto;margin:1.5em 0;padding:5px 0}.math-inline{display:inline-block;max-width:100%;overflow-x:auto;vertical-align:middle}mjx-container{max-width:none}.meta{color:var(--muted);font:14px/1.6 system-ui,sans-serif}.contents{font:15px/1.6 system-ui,sans-serif;background:#f2f6f5;padding:16px 22px;border-radius:6px}.contents ul{padding-left:20px}.contents summary{cursor:pointer;font-weight:600}.cards{display:grid;gap:16px}.card{padding:20px;border:1px solid #d5dfdf;border-radius:7px}.card h2{border:0;padding:0;margin:0 0 8px;font-size:1.2rem}.card p{margin:0}
+footer{margin-top:40px;border-top:1px solid #ddd;padding-top:15px}
+.manuscript-contents{font:15px/1.6 system-ui,sans-serif;margin:2rem 0;padding:20px 28px;background:#f2f6f5}.manuscript-contents h2{border:0;margin:0 0 12px;padding:0}.manuscript-contents ul{list-style:none;padding:0}.manuscript-contents li{margin:.35em 0}
+@media(max-width:700px){body{font-size:17px}main{margin:0;border:0;border-radius:0;padding:28px 20px}h1{font-size:1.65rem}h2{font-size:1.3rem}nav{padding:12px 20px}table{font-size:.8em}}
+@media print{nav,.contents,.print-control{display:none}body{background:white;font-size:10.5pt}main{border:0;margin:0;padding:0;max-width:none}h1{font-size:21pt}h2{font-size:15pt;break-after:avoid}h3{break-after:avoid}.math-display{overflow:visible;break-inside:avoid}mjx-container[jax="SVG"]>svg{max-width:100%;height:auto}a{color:inherit}table{font-size:9pt;break-inside:avoid}tr{break-inside:avoid}th,td{padding:6px}pre{font-size:8pt}footer{font-size:8pt}@page{size:A4;margin:18mm}
+.simulation-summary th,.simulation-summary td{white-space:nowrap}@media print{.referee-response table,.simulation-study table,.review-manuscript table{break-inside:auto}.simulation-study img{max-height:155mm;object-fit:contain}}
+@media print{.boundary-study img[alt^="Numerical acceptance"]{max-height:225mm}}
+.numerical-table{overflow-wrap:normal}@media print{.numerical-table{font-size:8pt}.numerical-table th,.numerical-table td{padding:3px}}
+.cohort-table th:nth-child(3){white-space:nowrap}
+.thesis-extension-manuscript h1{text-wrap:balance}
+@media print{.manuscript-contents{break-before:page;break-after:page;background:white;padding:0;font-size:11pt}.review-manuscript footer,.periodic-covariates footer,.early-episode-inference footer{display:none}}
+@media print{.review-manuscript .keep-table{break-inside:avoid}}
+
+/* Portable package documentation. */
+pre { overflow-x:auto; max-width:100%; padding:1rem; background:#f3f5f7; }
+.package-docs main { max-width:960px; }
+.math-display { overflow-x:auto; max-width:100%; }
+img { max-width:100%; height:auto; }
+@media print { nav { display:none; } .math-display { overflow:visible; } }
