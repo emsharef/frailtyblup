@@ -95,15 +95,21 @@
     "sha256": "9d2235499ecaf8a0eb343e1643e032c02ac5d8ce3f5fc48f7787421e6397e0f4"
   },
   {
-    "artifact": "paper/manuscript.md",
+    "artifact": "paper/manuscript.tex",
+    "original_sha256": "3e46df7f6839d10482733c52d8cf4dce21ac7bc368fdcd760a8aad2861936ae0",
+    "sha256": "9c39dd73586347ea4d8490053732e2fe436344aa7b4e0930d618ef0c98671ac6",
+    "changes": "Canonical manuscript 0.12 LaTeX source with private paths replaced by public or repository-local links; mathematical content and tables unchanged."
+  },
+  {
+    "artifact": "paper/web-version.md",
     "original_sha256": "7ae989eff6a23174f58d9f81ca7a24622043539de3d362502a059aabac0f0ccf",
     "sha256": "77475f557ff116027b92e69d542da0533633b3d1d91566d3d755602ba85037cc",
-    "changes": "Portable supplement/reference links and accurate public reproducibility wording; all mathematical displays and table rows unchanged."
+    "changes": "Retained accessible HTML-oriented mirror; the LaTeX source is canonical."
   },
   {
     "artifact": "paper/paper.pdf",
-    "sha256": "96d263c2ef1b8136dcafd2382b126f754582d4da0ad3fd188c653b699c5b24cf",
-    "original_sha256": "0aef7fdb1c4f2495e1fb1495217dcb08c6b0e6ff27cc631859dd675125f12103",
-    "changes": "Rebuilt from the portable manuscript; all 28 tables and 1917 formulas rendered; preview-host PDF annotations converted to relative links."
+    "sha256": "4580da2c6f3080667844014dabd82408d9b7ca7c3141111a379112f959226c50",
+    "original_sha256": "54ef6e4237b9c9e1d47e1cb9221d5e6f17eed32f55b5b0a3b4bae558f9c0d1b8",
+    "changes": "Compiled from the portable canonical LaTeX manuscript with Tectonic 0.17.0."
   }
 ]

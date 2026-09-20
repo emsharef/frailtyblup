@@ -7,5 +7,6 @@
 - Singleton-cluster initialization and one-bin baseline support.
 - Synthetic static, measured-covariate, alternating, CSV and joint-growth examples.
 - Paper, aggregate supporting results, proof-preserving public links, numerical tests and documentation.
+- Canonical manuscript LaTeX source and a reproducible Tectonic paper build.
 
 No package-registry release or public hosting is implied by this local version number.

@@ -1,4 +1,4 @@
-"""Check portable documentation links, manuscript tables, and public artifacts."""
+"""Check portable documentation, LaTeX paper, and public artifacts."""
 
 from pathlib import Path
 from html.parser import HTMLParser
@@ -62,29 +62,24 @@ def main():
             )
             assert dest.is_file() or dest.is_dir(), (path.name, raw)
             checked += 1
-    source = (ROOT / "paper/manuscript.md").read_text()
-    doc = Document()
-    doc.feed((site / "paper/manuscript.html").read_text())
-    blocks = re.findall(
-        r"^\|[^\n]+\|\n\|(?:[ \t]*:?-+:?[ \t]*\|)+[ \t]*\n(?:\|[^\n]*\|[ \t]*(?:\n|$))+",
-        source,
-        re.M,
-    )
-    normalize = lambda x: re.sub(r"\s+", " ", x).strip()
-    assert len(blocks) == len(doc.tables) == 28
-    for block, actual in zip(blocks, doc.tables):
-        lines = block.strip().splitlines()
-        expected = [
-            [normalize(c) for c in line.strip().strip("|").split("|")]
-            for line in [lines[0]] + lines[2:]
-        ]
-        assert expected == [[normalize(c) for c in row] for row in actual], expected[0]
+    source_path = ROOT / "paper/manuscript.tex"
+    source = source_path.read_text()
+    assert source.count(r"\begin{longtable}") == 28
+    assert source.count(r"\tag{") == 188
+    assert source.count(r"\includegraphics") == 3
+    local_targets = re.findall(r"\\href\{([^}]+)\}", source)
+    local_targets += re.findall(r"\\includegraphics(?:\[[^]]*\])?\{([^}]+)\}", source)
+    for raw in local_targets:
+        parts = urlsplit(raw)
+        if parts.scheme or parts.netloc:
+            continue
+        assert (source_path.parent / unquote(parts.path)).is_file(), raw
     # Distribution must have no source references to a research workstation,
     # private mail exports, or a Tailscale host. Synthetic CSV identifiers remain.
     for folder in ["src", "docs", "paper", "results", "examples", "tests", "tools"]:
         for path in (ROOT / folder).rglob("*"):
             if (
-                path.suffix not in {".py", ".md", ".json", ".csv", ".cjs"}
+                path.suffix not in {".py", ".md", ".tex", ".json", ".csv", ".cjs"}
                 or path.name == Path(__file__).name
             ):
                 continue
@@ -103,8 +98,9 @@ def main():
             {
                 "passed": True,
                 "local_links": checked,
-                "manuscript_tables": len(doc.tables),
-                "all_table_cells_match": True,
+                "manuscript_tables": source.count(r"\begin{longtable}"),
+                "numbered_displays": source.count(r"\tag{"),
+                "paper_local_targets": len(local_targets),
                 "portable_source_scan": True,
             },
             indent=2,

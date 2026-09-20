@@ -4,7 +4,7 @@
 
 Installation, all synthetic examples, the validated public interval interface, the constrained estimator, numerical regression tests, and documentation builds require no private files. `tests/reference.json` contains expected scores, derivatives and predictions evaluated by the original manuscript implementation on synthetic inputs. `docs/kernel_provenance.json` records the source identities. The default packaged coupled search uses the same equations, scaling and candidate-selection rule.
 
-The [paper](../paper/manuscript.md) includes all proofs, simulation tables and application results. Supporting simulation/coverage summaries, simulated per-history interval diagnostics, aggregate clinical coefficient/Jacobian summaries, and figures are in `results/`. The [artifact manifest](paper_provenance.json) identifies original and public-copy hashes. The public manuscript changes links and explains this repository's reproduction scope; mathematical displays and source table rows were compared with manuscript 0.12 and preserved.
+The paper's canonical [LaTeX source](../paper/manuscript.tex) includes all proofs, simulation tables and application results; the compiled [PDF](../paper/paper.pdf) is checked in for readers. Supporting simulation/coverage summaries, simulated per-history interval diagnostics, aggregate clinical coefficient/Jacobian summaries, and figures are in `results/`. The [artifact manifest](paper_provenance.json) identifies original and public-copy hashes. The public LaTeX source changes links and explains this repository's reproduction scope; mathematical displays and source table rows from manuscript 0.12 are preserved.
 
 ## Historical study versus standalone examples
 
@@ -31,8 +31,11 @@ python examples/from_csv.py
 python tools/recompute_multiplier.py
 python -m pip install '.[docs]'
 python tools/build_docs.py
+python tools/build_paper.py
 ```
 
-`tools/build_docs.py` generates portable HTML and copies supplements into `site/`. It uses MathJax 3.2.2 from a CDN by default; `--mathjax-url` selects a locally hosted installation. No website deployment occurs. The PDF is included as a reviewed artifact. To regenerate it, serve the generated site, install the optional Node rendering dependencies with `npm install`, install Chromium with `npx playwright install chromium`, and run `node tools/render_pdf.cjs http://127.0.0.1:8000 paper/paper.pdf`. The renderer checks formula errors and table counts and writes a render report. Install the PDF extra with `python -m pip install '.[pdf]'`, then run `python tools/finalize_pdf.py paper/paper.pdf --base-url http://127.0.0.1:8000` to make PDF links independent of the preview server. Rebuild the site once more to copy the new PDF.
+`tools/build_paper.py` requires Tectonic on `PATH`, compiles from the `paper/` directory, and atomically replaces `paper/paper.pdf` after a successful build. Tectonic resolves the document's LaTeX packages and performs the reruns needed for references. The source deliberately uses no private files: figures and linked supplements resolve inside this repository.
+
+`tools/build_docs.py` generates portable HTML documentation and copies the paper source, PDF, and supplements into `site/`. It uses MathJax 3.2.2 from a CDN by default; `--mathjax-url` selects a locally hosted installation. No website deployment occurs. `paper/web-version.md` is a retained accessible HTML-oriented mirror of manuscript 0.12; it is not the canonical source.
 
 The recorded test environment is in `docs/validation_environment.json`; dependency lower bounds are compatibility targets, not claims that every version has been exercised locally. CI covers additional Python versions when run by the repository host.

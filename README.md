@@ -2,7 +2,7 @@
 
 A Python implementation of **Linear Prediction and Frailty Inference for Clustered Recurrent Events**. Fit step baselines, covariate effects, and correlated frailty components using first and second moments rather than a fitted frailty distribution.
 
-[Paper](paper/manuscript.md) · [PDF](paper/paper.pdf) · [Data format](docs/data.md) · [API](docs/api.md) · [Examples](docs/examples.md) · [Reproducibility](docs/reproducibility.md)
+[LaTeX paper](paper/manuscript.tex) · [PDF](paper/paper.pdf) · [Data format](docs/data.md) · [API](docs/api.md) · [Examples](docs/examples.md) · [Reproducibility](docs/reproducibility.md)
 
 ## Install
 
@@ -56,8 +56,9 @@ The paper proves local long-history results under stated assumptions. Finite-his
 python -m unittest discover -s tests -v
 python -m pip install '.[docs]'
 python tools/build_docs.py
+python tools/build_paper.py
 ```
 
-The generated site is in `site/`. Serve it with `python -m http.server --directory site` to read the paper and documentation. For a source/wheel build, install `build` and run `python -m build`. CI exercises tests, examples, documentation, and an installed wheel.
+The paper's canonical source is `paper/manuscript.tex`; `python tools/build_paper.py` compiles it with [Tectonic](https://tectonic-typesetting.github.io/) and writes `paper/paper.pdf`. The generated documentation site is in `site/`. Serve it with `python -m http.server --directory site`. For a source/wheel build, install `build` and run `python -m build`. CI compiles the paper and exercises tests, examples, documentation, and an installed wheel.
 
 This is research software, version 0.1.0. [Changes](CHANGELOG.md) · [Contribution guide](CONTRIBUTING.md) · [MIT license](LICENSE).

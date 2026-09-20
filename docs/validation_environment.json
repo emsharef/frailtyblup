@@ -6,7 +6,6 @@
     "numpy": "2.5.3",
     "scipy": "1.18.1",
     "Markdown": "3.8.2",
-    "PyMuPDF": "1.28.2",
     "setuptools": "84.0.0",
     "build": "1.6.1"
   }

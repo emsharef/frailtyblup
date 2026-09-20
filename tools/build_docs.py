@@ -51,7 +51,7 @@ def render(source, out, mathjax):
     body = body.replace("<table>", '<div class="table-wrap"><table>').replace(
         "</table>", "</table></div>"
     )
-    if source.name == "manuscript.md":
+    if source.name == "web-version.md":
         body = body.replace(
             "<table>\n<thead>\n<tr>\n<th>Analysis cohort</th>",
             '<table class="cohort-table">\n<thead>\n<tr>\n<th>Analysis cohort</th>',
@@ -92,7 +92,7 @@ def render(source, out, mathjax):
         f'<a href="{prefix}{url}">{label}</a>'
         for url, label in [
             ("index.html", "FrailtyBLUP"),
-            ("paper/manuscript.html", "Paper"),
+            ("paper/paper.pdf", "Paper"),
             ("docs/data.html", "Data"),
             ("docs/api.html", "API"),
             ("docs/examples.html", "Examples"),
@@ -102,7 +102,7 @@ def render(source, out, mathjax):
     math_config = r"window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$']]},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};"
     klass = (
         "review-manuscript thesis-extension-manuscript"
-        if source.name == "manuscript.md"
+        if source.name == "web-version.md"
         else "package-docs"
     )
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -141,7 +141,7 @@ def main():
             target = out / source.relative_to(ROOT)
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source, target)
-    for name in ["LICENSE", "CITATION.cff", "pyproject.toml", "package.json"]:
+    for name in ["LICENSE", "CITATION.cff", "pyproject.toml"]:
         shutil.copyfile(ROOT / name, out / name)
     print(f"Built {len(sources)} HTML pages in {out}")
 
